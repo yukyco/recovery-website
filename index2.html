@@ -3,31 +3,26 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>10枚の画像ページ</title>
+  <title>あなたの大切なホームページを安全に守り続けます</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      padding: 40px;
-      background: #f9f9f9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-family: sans-serif;
+      padding: 0;
+      background: #000; /* 背景黒でも白でもOK */
     }
-    .image-box {
-      width: 90%;
-      max-width: 900px;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      margin-bottom: 40px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      overflow: hidden;
-    }
-    .image-box img {
-      width: 100%;
-      height: auto;
+
+    img {
       display: block;
+      width: 100vw;   /* 画面幅いっぱい */
+      height: auto;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    /* もしスマホで上下の隙間が気になる場合に調整 */
+    body {
+      line-height: 0;
     }
   </style>
 </head>
